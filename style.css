@@ -1,0 +1,74 @@
+body {
+    background-color: teal;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#board-container {
+    display: flex;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.square {
+    border: 2px solid;
+    border-color: darkslategray;
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Arial";
+    color: lightblue;
+    /*display: flex;*/
+}
+
+h1 {
+    text-align: center;
+    font-family: "Arial";
+    color: lightblue;
+    font-size: 48px;
+    margin: 15px;
+}
+
+/* uncomment this and see effect by moving mouse over square or touching square on a phone */
+
+.square:hover {
+    background-color: rgb(200,200,200);
+}
+
+
+/* uncomment these to see effect - visit on phone more likely than browser */
+
+.keyboard-row {
+  display: flex;
+  width: 100%;
+}
+
+.keyboard-row button {
+    flex-grow: 1;
+    min-height: 50px;
+    margin-left: 5px;
+    text-transform: capitalize;
+    border: none;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.keyboard-row button:hover {
+    background-color: lightslategray;
+}
